@@ -1,5 +1,5 @@
 # ChromeTimeStamper
-Un outil pour créer des TimeStamp en commentaires pour les logiciels de billetteries.
+Un outil pour créer des TimeStamps en commentaire pour les logiciels de billetterie.
 
 ## Installation
 1. Obtenez une copie du code
