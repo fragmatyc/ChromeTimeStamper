@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ChromeTimeStamper</title>
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/moment/min/moment-with-locales.min.js"></script>
+    <link rel="stylesheet" href="js/bootstrap/dist/css/bootstrap.min.css">
+    
+    <style>
+        html {
+            width: 350px;
+        }
+        
+        body {
+            width: 350px;
+        }
+        
+        h1 {
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+        
+        .buttons {
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Chrome TimeStamper</h1>
+        <div id="messages"></div>
+		
+        <div id="changeNameDiv" class="form-group" style="display: none">
+            <label for="usrName">Votre nom:</label>
+            <input type="text" class="form-control" id="usrName" placeholder="Enter your name...">
+        </div>
+		
+		<div id="timestampDiv" class="form-group">
+            <label for="timestamp">Votre Timestamp:</label>
+            <input type="text" class="form-control" id="timestamp" placeholder="" readonly>
+        </div>
+		
+        <div class="pull-right buttons">		
+            <button type="button" id="generateBtn" class="btn btn-primary">Générer</button>
+			<button type="button" id="saveBtn" class="btn btn-primary" style="display: none;">Sauvegarder</button> 
+			
+            <button type="button" id="changeNameBtn" class="btn btn-default">Changer le nom</button> 	
+            <button type="button" id="cancelBtn" class="btn btn-default">Cancel</button>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+
+</html>
